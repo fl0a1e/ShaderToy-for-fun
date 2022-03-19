@@ -32,6 +32,20 @@
 
 代码页右键 `Shader Toy: Show GLSL Preview`即可实时观察效果
 
+### Texture Input
+
+The texture channels `iChannelN` may be defined by inserting code of the following form at the top of your shader
+
+```glsl
+#iChannel0 "file://duck.png"
+#iChannel1 "https://66.media.tumblr.com/tumblr_mcmeonhR1e1ridypxo1_500.jpg"
+#iChannel2 "file://other/shader.glsl"
+#iChannel2 "self"
+#iChannel4 "file://music/epic.mp3"
+```
+
+
+
 ### 构建3D
 
 参考 iq 大神的作品入的门，但一开始看属实抽象，虽然知道用了哪些技术，但看不懂代码，导致又杂七杂八参考了很多别人 shader 的才堪堪看懂
